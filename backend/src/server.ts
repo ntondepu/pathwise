@@ -4,10 +4,11 @@ import helmet from 'helmet';
 import compression from 'compression';
 import morgan from 'morgan';
 import dotenv from 'dotenv';
+import path from 'path';
 import rateLimit from 'express-rate-limit';
 
 // Load environment variables
-dotenv.config();
+dotenv.config({ path: path.resolve(__dirname, '../../.env') });
 
 // Import routes
 import authRoutes from './routes/auth';
@@ -18,6 +19,7 @@ import jobRoutes from './routes/jobs';
 import pathRoutes from './routes/paths';
 import aiRoutes from './routes/ai';
 import bookmarkRoutes from './routes/bookmarks';
+import demoRoutes from './routes/demo';
 
 // Import middleware
 import { errorHandler } from './middleware/errorHandler';
@@ -72,6 +74,9 @@ app.use('/api/jobs', jobRoutes);
 app.use('/api/paths', pathRoutes);
 app.use('/api/ai', aiRoutes);
 app.use('/api/bookmarks', bookmarkRoutes);
+
+// Demo routes (working without external APIs)
+app.use('/api/demo', demoRoutes);
 
 // Health check endpoint
 app.get('/api/health', (req, res) => {

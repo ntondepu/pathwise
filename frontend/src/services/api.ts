@@ -1,7 +1,7 @@
 import axios, { AxiosInstance, AxiosResponse } from 'axios';
 import { User, Course, Job, AcademicPath, CareerAdvice, Bookmark } from '@coursepath-ai/shared';
 
-const BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+const BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5001';
 
 class ApiService {
   private client: AxiosInstance;
@@ -196,6 +196,34 @@ class ApiService {
       await this.client.delete(`/api/bookmarks/${id}`, {
         headers: { Authorization: `Bearer ${token}` }
       });
+    },
+  };
+
+  // Demo endpoints (working without external APIs)
+  demo = {
+    getCourses: async (): Promise<Course[]> => {
+      const response = await this.client.get('/api/demo/courses');
+      return response.data;
+    },
+
+    getJobs: async (): Promise<Job[]> => {
+      const response = await this.client.get('/api/demo/jobs');
+      return response.data;
+    },
+
+    getProfessors: async (): Promise<any[]> => {
+      const response = await this.client.get('/api/demo/professors');
+      return response.data;
+    },
+
+    getPaths: async (): Promise<AcademicPath[]> => {
+      const response = await this.client.get('/api/demo/paths');
+      return response.data;
+    },
+
+    getResumeHelp: async (jobTitle: string): Promise<{ response: string; jobTitle: string; generatedAt: string }> => {
+      const response = await this.client.post('/api/demo/ai/resume-help', { jobTitle });
+      return response.data;
     },
   };
 }

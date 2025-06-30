@@ -16,6 +16,9 @@ const Navbar: React.FC = () => {
               <a href="/" className="text-gray-900 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium">
                 Home
               </a>
+              <a href="/demo" className="bg-green-100 text-green-800 hover:bg-green-200 px-3 py-2 rounded-md text-sm font-medium">
+                Demo (No API Keys)
+              </a>
               <a href="/dashboard" className="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium">
                 Dashboard
               </a>

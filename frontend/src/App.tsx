@@ -16,6 +16,7 @@ import JobsPage from './pages/JobsPage';
 import AIAssistantPage from './pages/AIAssistantPage';
 import ProfilePage from './pages/ProfilePage';
 import AuthPage from './pages/AuthPage';
+import DemoPage from './pages/DemoPage';
 
 // Import providers
 import { AuthProvider } from './contexts/AuthContext';
@@ -43,6 +44,7 @@ function App() {
                 {/* Public routes */}
                 <Route path="/" element={<HomePage />} />
                 <Route path="/auth" element={<AuthPage />} />
+                <Route path="/demo" element={<DemoPage />} />
                 
                 {/* Protected routes */}
                 <Route path="/dashboard" element={

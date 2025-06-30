@@ -1,14 +1,6 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { 
-  User as FirebaseUser,
-  signInWithPopup,
-  signInWithEmailAndPassword,
-  createUserWithEmailAndPassword,
-  signOut,
-  onAuthStateChanged,
-  GoogleAuthProvider
-} from 'firebase/auth';
-import { auth } from '../config/firebase';
+import { User as FirebaseUser } from 'firebase/auth';
+import { auth, isFirebaseConfigured } from '../config/firebase';
 import { User } from '@coursepath-ai/shared';
 import { api } from '../services/api';
 import toast from 'react-hot-toast';
@@ -44,32 +36,68 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
-      setFirebaseUser(firebaseUser);
-      
-      if (firebaseUser) {
-        try {
-          // Get or create user profile
-          const token = await firebaseUser.getIdToken();
-          const userProfile = await api.auth.getProfile(token);
-          setUser(userProfile);
-        } catch (error) {
-          console.error('Error fetching user profile:', error);
-          // If profile doesn't exist, we'll handle this in the registration flow
-        }
-      } else {
-        setUser(null);
-      }
-      
+    if (!isFirebaseConfigured || !auth) {
+      // Demo mode - create a mock user
+      console.log('Running in demo mode - Firebase not configured');
+      const demoUser: User = {
+        id: 'demo-user-123',
+        email: 'demo@example.com',
+        displayName: 'Demo User',
+        school: 'Demo University',
+        major: 'Computer Science',
+        graduationYear: 2026,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      };
+      setUser(demoUser);
       setLoading(false);
-    });
+      return;
+    }
 
-    return () => unsubscribe();
+    const setupAuthListener = async () => {
+      try {
+        const { onAuthStateChanged } = await import('firebase/auth');
+        
+        const unsubscribe = onAuthStateChanged(auth!, async (firebaseUser: FirebaseUser | null) => {
+          setFirebaseUser(firebaseUser);
+          
+          if (firebaseUser) {
+            try {
+              // Get or create user profile
+              const token = await firebaseUser.getIdToken();
+              const userProfile = await api.auth.getProfile(token);
+              setUser(userProfile);
+            } catch (error) {
+              console.error('Error fetching user profile:', error);
+              // If profile doesn't exist, we'll handle this in the registration flow
+            }
+          } else {
+            setUser(null);
+          }
+          
+          setLoading(false);
+        });
+
+        return unsubscribe;
+      } catch (error) {
+        console.error('Failed to setup auth listener:', error);
+        setLoading(false);
+      }
+    };
+
+    setupAuthListener();
   }, []);
 
   const signInWithGoogle = async () => {
+    if (!isFirebaseConfigured || !auth) {
+      toast.error('Authentication not configured - running in demo mode');
+      return;
+    }
+
     try {
       setLoading(true);
+      const { signInWithPopup, GoogleAuthProvider } = await import('firebase/auth');
+      
       const provider = new GoogleAuthProvider();
       const result = await signInWithPopup(auth, provider);
       
@@ -91,8 +119,15 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   };
 
   const signInWithEmail = async (email: string, password: string) => {
+    if (!isFirebaseConfigured || !auth) {
+      toast.error('Authentication not configured - running in demo mode');
+      return;
+    }
+
     try {
       setLoading(true);
+      const { signInWithEmailAndPassword } = await import('firebase/auth');
+      
       const result = await signInWithEmailAndPassword(auth, email, password);
       
       // Get user profile
@@ -110,8 +145,15 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   };
 
   const signUpWithEmail = async (email: string, password: string, displayName: string) => {
+    if (!isFirebaseConfigured || !auth) {
+      toast.error('Authentication not configured - running in demo mode');
+      return;
+    }
+
     try {
       setLoading(true);
+      const { createUserWithEmailAndPassword } = await import('firebase/auth');
+      
       const result = await createUserWithEmailAndPassword(auth, email, password);
       
       // Register user profile
@@ -132,7 +174,16 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   };
 
   const logout = async () => {
+    if (!isFirebaseConfigured || !auth) {
+      // In demo mode, just clear the user
+      setUser(null);
+      setFirebaseUser(null);
+      toast.success('Signed out successfully!');
+      return;
+    }
+
     try {
+      const { signOut } = await import('firebase/auth');
       await signOut(auth);
       setUser(null);
       setFirebaseUser(null);

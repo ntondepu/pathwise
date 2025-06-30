@@ -6,14 +6,32 @@ import OpenAI from 'openai';
 
 const router = Router();
 
-// Initialize OpenAI
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
+// Initialize OpenAI (conditional)
+let openai: OpenAI | null = null;
+
+if (process.env.OPENAI_API_KEY) {
+  try {
+    openai = new OpenAI({
+      apiKey: process.env.OPENAI_API_KEY,
+    });
+    logger.info('OpenAI client initialized successfully');
+  } catch (error) {
+    logger.warn('Failed to initialize OpenAI client:', error);
+  }
+} else {
+  logger.warn('OpenAI API key not configured - AI features will be disabled');
+}
 
 // Generate resume help
 router.post('/resume-help', authenticate, async (req: Request, res: Response) => {
   try {
+    if (!openai) {
+      return res.status(503).json({
+        success: false,
+        error: 'AI service is not configured. Please configure OpenAI API key.'
+      });
+    }
+
     const { courses, skills, jobTitle } = req.body;
     const firebaseUid = req.user!.uid;
 
@@ -78,6 +96,13 @@ Format as numbered list.`;
 // Generate interview preparation
 router.post('/interview-prep', authenticate, async (req: Request, res: Response) => {
   try {
+    if (!openai) {
+      return res.status(503).json({
+        success: false,
+        error: 'AI service is not configured. Please configure OpenAI API key.'
+      });
+    }
+
     const { courses, skills, jobTitle } = req.body;
     const firebaseUid = req.user!.uid;
 
@@ -141,6 +166,13 @@ Format each question clearly with the question type in parentheses.`;
 // Get certification recommendations
 router.post('/certifications', authenticate, async (req: Request, res: Response) => {
   try {
+    if (!openai) {
+      return res.status(503).json({
+        success: false,
+        error: 'AI service is not configured. Please configure OpenAI API key.'
+      });
+    }
+
     const { major, courses, targetJob } = req.body;
     const firebaseUid = req.user!.uid;
 

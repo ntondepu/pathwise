@@ -1,0 +1,209 @@
+2025-06-29 20:44:45:4445 [32minfo[39m: [32mStarting database migrations...[39m
+2025-06-29 20:44:45:4445 [32minfo[39m: [32m✓ Initial schema migration completed[39m
+2025-06-29 20:44:45:4445 [32minfo[39m: [32m✓ Seed data migration completed[39m
+2025-06-29 20:49:43:4943 [33mwarn[39m: [33mFailed to initialize Firebase Admin: Failed to parse private key: Error: Invalid PEM formatted message.[39m
+2025-06-29 20:49:43:4943 [32minfo[39m: [32mOpenAI client initialized successfully[39m
+2025-06-29 20:49:43:4943 [32minfo[39m: [32m🚀 Server running on port 5001 in development mode[39m
+2025-06-29 20:50:50:5050 [32minfo[39m: [32m::ffff:127.0.0.1 - - [30/Jun/2025:00:50:50 +0000] "GET /api/health HTTP/1.1" 200 109 "-" "curl/7.86.0"[39m
+2025-06-29 20:51:08:518 [31merror[39m: [31mError fetching courses: relation "departments" does not exist[39m
+2025-06-29 20:51:08:518 [32minfo[39m: [32m::ffff:127.0.0.1 - - [30/Jun/2025:00:51:08 +0000] "GET /api/courses HTTP/1.1" 500 49 "-" "curl/7.86.0"[39m
+2025-06-29 20:51:17:5117 [31merror[39m: [31mError: Not found - /api/jobs[39m
+2025-06-29 20:51:17:5117 [32minfo[39m: [32m::ffff:127.0.0.1 - - [30/Jun/2025:00:51:17 +0000] "GET /api/jobs HTTP/1.1" 500 1012 "-" "curl/7.86.0"[39m
+2025-06-29 20:51:24:5124 [33mwarn[39m: [33mFailed to initialize Firebase Admin: Failed to parse private key: Error: Invalid PEM formatted message.[39m
+2025-06-29 20:51:25:5125 [32minfo[39m: [32mOpenAI client initialized successfully[39m
+2025-06-29 20:51:25:5125 [32minfo[39m: [32m🚀 Server running on port 5001 in development mode[39m
+2025-06-29 20:51:57:5157 [32minfo[39m: [32m::ffff:127.0.0.1 - - [30/Jun/2025:00:51:57 +0000] "GET /api/health HTTP/1.1" 200 109 "-" "curl/7.86.0"[39m
+2025-06-29 20:52:04:524 [31merror[39m: [31mError: Not found - /api/users[39m
+2025-06-29 20:52:04:524 [32minfo[39m: [32m::ffff:127.0.0.1 - - [30/Jun/2025:00:52:04 +0000] "GET /api/users HTTP/1.1" 500 1014 "-" "curl/7.86.0"[39m
+2025-06-29 20:52:12:5212 [31merror[39m: [31mError fetching courses: relation "departments" does not exist[39m
+2025-06-29 20:52:12:5212 [32minfo[39m: [32m::ffff:127.0.0.1 - - [30/Jun/2025:00:52:12 +0000] "GET /api/courses HTTP/1.1" 500 49 "-" "curl/7.86.0"[39m
+2025-06-29 20:52:50:5250 [33mwarn[39m: [33mFailed to initialize Firebase Admin: Failed to parse private key: Error: Invalid PEM formatted message.[39m
+2025-06-29 20:52:50:5250 [32minfo[39m: [32mOpenAI client initialized successfully[39m
+2025-06-29 20:52:50:5250 [32minfo[39m: [32m🚀 Server running on port 5001 in development mode[39m
+2025-06-29 20:52:51:5251 [33mwarn[39m: [33mFailed to initialize Firebase Admin: Failed to parse private key: Error: Invalid PEM formatted message.[39m
+2025-06-29 20:52:52:5252 [32minfo[39m: [32mOpenAI client initialized successfully[39m
+2025-06-29 20:52:52:5252 [32minfo[39m: [32m🚀 Server running on port 5001 in development mode[39m
+2025-06-29 20:53:03:533 [33mwarn[39m: [33mFailed to initialize Firebase Admin: Failed to parse private key: Error: Invalid PEM formatted message.[39m
+2025-06-29 20:53:04:534 [32minfo[39m: [32mOpenAI client initialized successfully[39m
+2025-06-29 20:53:04:534 [32minfo[39m: [32m🚀 Server running on port 5001 in development mode[39m
+2025-06-29 20:53:12:5312 [33mwarn[39m: [33mFailed to initialize Firebase Admin: Failed to parse private key: Error: Invalid PEM formatted message.[39m
+2025-06-29 20:53:13:5313 [32minfo[39m: [32mOpenAI client initialized successfully[39m
+2025-06-29 20:53:13:5313 [32minfo[39m: [32m🚀 Server running on port 5001 in development mode[39m
+2025-06-29 20:55:09:559 [32minfo[39m: [32mFetching demo courses[39m
+2025-06-29 20:55:09:559 [32minfo[39m: [32m::ffff:127.0.0.1 - - [30/Jun/2025:00:55:09 +0000] "GET /api/demo/courses HTTP/1.1" 200 777 "-" "curl/7.86.0"[39m
+2025-06-29 20:55:15:5515 [32minfo[39m: [32mFetching demo jobs[39m
+2025-06-29 20:55:15:5515 [32minfo[39m: [32m::ffff:127.0.0.1 - - [30/Jun/2025:00:55:15 +0000] "GET /api/demo/jobs HTTP/1.1" 200 903 "-" "curl/7.86.0"[39m
+2025-06-29 20:55:53:5553 [32minfo[39m: [32m::ffff:127.0.0.1 - - [30/Jun/2025:00:55:53 +0000] "POST /api/demo/ai/resume-help HTTP/1.1" 200 712 "-" "curl/7.86.0"[39m
+2025-06-29 21:00:41:041 [32minfo[39m: [32m::ffff:127.0.0.1 - - [30/Jun/2025:01:00:41 +0000] "GET /api/health HTTP/1.1" 200 110 "-" "curl/7.86.0"[39m
+2025-06-29 21:01:13:113 [33mwarn[39m: [33mFailed to initialize Firebase Admin: Failed to parse private key: Error: Invalid PEM formatted message.[39m
+2025-06-29 21:01:13:113 [32minfo[39m: [32mOpenAI client initialized successfully[39m
+2025-06-29 21:01:13:113 [32minfo[39m: [32m🚀 Server running on port 5001 in development mode[39m
+2025-06-29 21:01:25:125 [32minfo[39m: [32m::ffff:127.0.0.1 - - [30/Jun/2025:01:01:25 +0000] "GET /api/health HTTP/1.1" 200 109 "-" "curl/7.86.0"[39m
+2025-06-29 21:01:38:138 [32minfo[39m: [32mFetching demo courses[39m
+2025-06-29 21:01:38:138 [32minfo[39m: [32m::ffff:127.0.0.1 - - [30/Jun/2025:01:01:38 +0000] "GET /api/demo/courses HTTP/1.1" 200 777 "-" "curl/7.86.0"[39m
+2025-06-29 21:01:43:143 [32minfo[39m: [32mFetching demo jobs[39m
+2025-06-29 21:01:43:143 [32minfo[39m: [32m::ffff:127.0.0.1 - - [30/Jun/2025:01:01:43 +0000] "GET /api/demo/jobs HTTP/1.1" 200 903 "-" "curl/7.86.0"[39m
+2025-06-29 21:04:18:418 [31merror[39m: [31mError: Not found - /api/api/demo/courses[39m
+2025-06-29 21:04:18:418 [31merror[39m: [31mError: Not found - /api/api/demo/jobs[39m
+2025-06-29 21:04:18:418 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:04:18 +0000] "GET /api/api/demo/courses HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:04:18:418 [31merror[39m: [31mError: Not found - /api/api/demo/professors[39m
+2025-06-29 21:04:18:418 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:04:18 +0000] "GET /api/api/demo/jobs HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:04:18:418 [31merror[39m: [31mError: Not found - /api/api/demo/paths[39m
+2025-06-29 21:04:18:418 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:04:18 +0000] "GET /api/api/demo/professors HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:04:18:418 [31merror[39m: [31mError: Not found - /api/api/demo/jobs[39m
+2025-06-29 21:04:18:418 [31merror[39m: [31mError: Not found - /api/api/demo/courses[39m
+2025-06-29 21:04:18:418 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:04:18 +0000] "GET /api/api/demo/paths HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:04:18:418 [31merror[39m: [31mError: Not found - /api/api/demo/professors[39m
+2025-06-29 21:04:18:418 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:04:18 +0000] "GET /api/api/demo/jobs HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:04:18:418 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:04:18 +0000] "GET /api/api/demo/courses HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:04:18:418 [31merror[39m: [31mError: Not found - /api/api/demo/paths[39m
+2025-06-29 21:04:18:418 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:04:18 +0000] "GET /api/api/demo/professors HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:04:18:418 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:04:18 +0000] "GET /api/api/demo/paths HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:04:32:432 [31merror[39m: [31mError: Not found - /api/api/demo/courses[39m
+2025-06-29 21:04:32:432 [31merror[39m: [31mError: Not found - /api/api/demo/jobs[39m
+2025-06-29 21:04:32:432 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:04:32 +0000] "GET /api/api/demo/courses HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:04:32:432 [31merror[39m: [31mError: Not found - /api/api/demo/professors[39m
+2025-06-29 21:04:32:432 [31merror[39m: [31mError: Not found - /api/api/demo/courses[39m
+2025-06-29 21:04:32:432 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:04:32 +0000] "GET /api/api/demo/jobs HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:04:32:432 [31merror[39m: [31mError: Not found - /api/api/demo/paths[39m
+2025-06-29 21:04:32:432 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:04:32 +0000] "GET /api/api/demo/professors HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:04:32:432 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:04:32 +0000] "GET /api/api/demo/courses HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:04:32:432 [31merror[39m: [31mError: Not found - /api/api/demo/jobs[39m
+2025-06-29 21:04:32:432 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:04:32 +0000] "GET /api/api/demo/paths HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:04:32:432 [31merror[39m: [31mError: Not found - /api/api/demo/professors[39m
+2025-06-29 21:04:32:432 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:04:32 +0000] "GET /api/api/demo/jobs HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:04:32:432 [31merror[39m: [31mError: Not found - /api/api/demo/paths[39m
+2025-06-29 21:04:32:432 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:04:32 +0000] "GET /api/api/demo/professors HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:04:32:432 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:04:32 +0000] "GET /api/api/demo/paths HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:04:48:448 [31merror[39m: [31mError: Not found - /api/api/demo/courses[39m
+2025-06-29 21:04:48:448 [31merror[39m: [31mError: Not found - /api/api/demo/jobs[39m
+2025-06-29 21:04:48:448 [31merror[39m: [31mError: Not found - /api/api/demo/professors[39m
+2025-06-29 21:04:48:448 [31merror[39m: [31mError: Not found - /api/api/demo/paths[39m
+2025-06-29 21:04:48:448 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:04:48 +0000] "GET /api/api/demo/courses HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:04:48:448 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:04:48 +0000] "GET /api/api/demo/jobs HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:04:48:448 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:04:48 +0000] "GET /api/api/demo/professors HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:04:48:448 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:04:48 +0000] "GET /api/api/demo/paths HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:04:48:448 [31merror[39m: [31mError: Not found - /api/api/demo/jobs[39m
+2025-06-29 21:04:48:448 [31merror[39m: [31mError: Not found - /api/api/demo/courses[39m
+2025-06-29 21:04:48:448 [31merror[39m: [31mError: Not found - /api/api/demo/professors[39m
+2025-06-29 21:04:48:448 [31merror[39m: [31mError: Not found - /api/api/demo/paths[39m
+2025-06-29 21:04:48:448 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:04:48 +0000] "GET /api/api/demo/courses HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:04:48:448 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:04:48 +0000] "GET /api/api/demo/jobs HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:04:48:448 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:04:48 +0000] "GET /api/api/demo/professors HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:04:48:448 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:04:48 +0000] "GET /api/api/demo/paths HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:04:57:457 [31merror[39m: [31mError: Not found - /api/api/demo/courses[39m
+2025-06-29 21:04:57:457 [31merror[39m: [31mError: Not found - /api/api/demo/jobs[39m
+2025-06-29 21:04:57:457 [31merror[39m: [31mError: Not found - /api/api/demo/professors[39m
+2025-06-29 21:04:57:457 [31merror[39m: [31mError: Not found - /api/api/demo/paths[39m
+2025-06-29 21:04:57:457 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:04:57 +0000] "GET /api/api/demo/courses HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:04:57:457 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:04:57 +0000] "GET /api/api/demo/jobs HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:04:57:457 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:04:57 +0000] "GET /api/api/demo/professors HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:04:57:457 [31merror[39m: [31mError: Not found - /api/api/demo/jobs[39m
+2025-06-29 21:04:57:457 [31merror[39m: [31mError: Not found - /api/api/demo/professors[39m
+2025-06-29 21:04:57:457 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:04:57 +0000] "GET /api/api/demo/paths HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:04:57:457 [31merror[39m: [31mError: Not found - /api/api/demo/courses[39m
+2025-06-29 21:04:57:457 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:04:57 +0000] "GET /api/api/demo/jobs HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:04:57:457 [31merror[39m: [31mError: Not found - /api/api/demo/paths[39m
+2025-06-29 21:04:57:457 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:04:57 +0000] "GET /api/api/demo/professors HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:04:57:457 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:04:57 +0000] "GET /api/api/demo/courses HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:04:57:457 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:04:57 +0000] "GET /api/api/demo/paths HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:05:10:510 [31merror[39m: [31mError: Not found - /api/api/demo/courses[39m
+2025-06-29 21:05:10:510 [31merror[39m: [31mError: Not found - /api/api/demo/jobs[39m
+2025-06-29 21:05:10:510 [31merror[39m: [31mError: Not found - /api/api/demo/professors[39m
+2025-06-29 21:05:10:510 [31merror[39m: [31mError: Not found - /api/api/demo/paths[39m
+2025-06-29 21:05:10:510 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:05:10 +0000] "GET /api/api/demo/jobs HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:05:10:510 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:05:10 +0000] "GET /api/api/demo/courses HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:05:10:510 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:05:10 +0000] "GET /api/api/demo/professors HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:05:10:510 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:05:10 +0000] "GET /api/api/demo/paths HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:05:10:510 [31merror[39m: [31mError: Not found - /api/api/demo/courses[39m
+2025-06-29 21:05:10:510 [31merror[39m: [31mError: Not found - /api/api/demo/professors[39m
+2025-06-29 21:05:10:510 [31merror[39m: [31mError: Not found - /api/api/demo/paths[39m
+2025-06-29 21:05:10:510 [31merror[39m: [31mError: Not found - /api/api/demo/jobs[39m
+2025-06-29 21:05:10:510 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:05:10 +0000] "GET /api/api/demo/professors HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:05:10:510 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:05:10 +0000] "GET /api/api/demo/paths HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:05:10:510 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:05:10 +0000] "GET /api/api/demo/courses HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:05:10:510 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:05:10 +0000] "GET /api/api/demo/jobs HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:05:46:546 [31merror[39m: [31mError: Not found - /api/api/demo/courses[39m
+2025-06-29 21:05:46:546 [31merror[39m: [31mError: Not found - /api/api/demo/jobs[39m
+2025-06-29 21:05:46:546 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:05:46 +0000] "GET /api/api/demo/courses HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:05:46:546 [31merror[39m: [31mError: Not found - /api/api/demo/professors[39m
+2025-06-29 21:05:46:546 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:05:46 +0000] "GET /api/api/demo/jobs HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:05:46:546 [31merror[39m: [31mError: Not found - /api/api/demo/paths[39m
+2025-06-29 21:05:46:546 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:05:46 +0000] "GET /api/api/demo/professors HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:05:46:546 [31merror[39m: [31mError: Not found - /api/api/demo/jobs[39m
+2025-06-29 21:05:46:546 [31merror[39m: [31mError: Not found - /api/api/demo/courses[39m
+2025-06-29 21:05:46:546 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:05:46 +0000] "GET /api/api/demo/paths HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:05:46:546 [31merror[39m: [31mError: Not found - /api/api/demo/professors[39m
+2025-06-29 21:05:46:546 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:05:46 +0000] "GET /api/api/demo/jobs HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:05:46:546 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:05:46 +0000] "GET /api/api/demo/courses HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:05:46:546 [31merror[39m: [31mError: Not found - /api/api/demo/paths[39m
+2025-06-29 21:05:46:546 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:05:46 +0000] "GET /api/api/demo/professors HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:05:46:546 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:05:46 +0000] "GET /api/api/demo/paths HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:05:53:553 [31merror[39m: [31mError: Not found - /api/api/demo/courses[39m
+2025-06-29 21:05:53:553 [31merror[39m: [31mError: Not found - /api/api/demo/jobs[39m
+2025-06-29 21:05:53:553 [31merror[39m: [31mError: Not found - /api/api/demo/professors[39m
+2025-06-29 21:05:53:553 [31merror[39m: [31mError: Not found - /api/api/demo/paths[39m
+2025-06-29 21:05:53:553 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:05:53 +0000] "GET /api/api/demo/courses HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:05:53:553 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:05:53 +0000] "GET /api/api/demo/jobs HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:05:53:553 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:05:53 +0000] "GET /api/api/demo/professors HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:05:53:553 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:05:53 +0000] "GET /api/api/demo/paths HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:05:53:553 [31merror[39m: [31mError: Not found - /api/api/demo/jobs[39m
+2025-06-29 21:05:53:553 [31merror[39m: [31mError: Not found - /api/api/demo/professors[39m
+2025-06-29 21:05:53:553 [31merror[39m: [31mError: Not found - /api/api/demo/paths[39m
+2025-06-29 21:05:53:553 [31merror[39m: [31mError: Not found - /api/api/demo/courses[39m
+2025-06-29 21:05:53:553 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:05:53 +0000] "GET /api/api/demo/paths HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:05:53:553 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:05:53 +0000] "GET /api/api/demo/professors HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:05:53:553 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:05:53 +0000] "GET /api/api/demo/jobs HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:05:53:553 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:05:53 +0000] "GET /api/api/demo/courses HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:06:00:60 [31merror[39m: [31mError: Not found - /api/api/demo/courses[39m
+2025-06-29 21:06:00:60 [31merror[39m: [31mError: Not found - /api/api/demo/jobs[39m
+2025-06-29 21:06:00:60 [31merror[39m: [31mError: Not found - /api/api/demo/professors[39m
+2025-06-29 21:06:00:60 [31merror[39m: [31mError: Not found - /api/api/demo/paths[39m
+2025-06-29 21:06:00:60 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:06:00 +0000] "GET /api/api/demo/courses HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:06:00:60 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:06:00 +0000] "GET /api/api/demo/jobs HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:06:00:60 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:06:00 +0000] "GET /api/api/demo/paths HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:06:00:60 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:06:00 +0000] "GET /api/api/demo/professors HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:06:00:60 [31merror[39m: [31mError: Not found - /api/api/demo/courses[39m
+2025-06-29 21:06:00:60 [31merror[39m: [31mError: Not found - /api/api/demo/jobs[39m
+2025-06-29 21:06:00:60 [31merror[39m: [31mError: Not found - /api/api/demo/professors[39m
+2025-06-29 21:06:00:60 [31merror[39m: [31mError: Not found - /api/api/demo/paths[39m
+2025-06-29 21:06:00:60 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:06:00 +0000] "GET /api/api/demo/professors HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:06:00:60 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:06:00 +0000] "GET /api/api/demo/jobs HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:06:00:60 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:06:00 +0000] "GET /api/api/demo/courses HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:06:00:60 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:06:00 +0000] "GET /api/api/demo/paths HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:06:08:68 [31merror[39m: [31mError: Not found - /api/api/demo/courses[39m
+2025-06-29 21:06:08:68 [31merror[39m: [31mError: Not found - /api/api/demo/jobs[39m
+2025-06-29 21:06:08:68 [31merror[39m: [31mError: Not found - /api/api/demo/professors[39m
+2025-06-29 21:06:08:68 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:06:08 +0000] "GET /api/api/demo/courses HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:06:08:68 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:06:08 +0000] "GET /api/api/demo/jobs HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:06:08:68 [31merror[39m: [31mError: Not found - /api/api/demo/paths[39m
+2025-06-29 21:06:08:68 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:06:08 +0000] "GET /api/api/demo/professors HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:06:08:68 [31merror[39m: [31mError: Not found - /api/api/demo/jobs[39m
+2025-06-29 21:06:08:68 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:06:08 +0000] "GET /api/api/demo/paths HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:06:08:68 [31merror[39m: [31mError: Not found - /api/api/demo/professors[39m
+2025-06-29 21:06:08:68 [31merror[39m: [31mError: Not found - /api/api/demo/courses[39m
+2025-06-29 21:06:08:68 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:06:08 +0000] "GET /api/api/demo/jobs HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:06:08:68 [31merror[39m: [31mError: Not found - /api/api/demo/paths[39m
+2025-06-29 21:06:08:68 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:06:08 +0000] "GET /api/api/demo/professors HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:06:08:68 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:06:08 +0000] "GET /api/api/demo/courses HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:06:08:68 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:06:08 +0000] "GET /api/api/demo/paths HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:06:39:639 [31merror[39m: [31mError: Not found - /api/api/demo/courses[39m
+2025-06-29 21:06:39:639 [31merror[39m: [31mError: Not found - /api/api/demo/jobs[39m
+2025-06-29 21:06:39:639 [31merror[39m: [31mError: Not found - /api/api/demo/professors[39m
+2025-06-29 21:06:39:639 [31merror[39m: [31mError: Not found - /api/api/demo/paths[39m
+2025-06-29 21:06:39:639 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:06:39 +0000] "GET /api/api/demo/courses HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:06:39:639 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:06:39 +0000] "GET /api/api/demo/professors HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:06:39:639 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:06:39 +0000] "GET /api/api/demo/jobs HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:06:39:639 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:06:39 +0000] "GET /api/api/demo/paths HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:06:39:639 [31merror[39m: [31mError: Not found - /api/api/demo/courses[39m
+2025-06-29 21:06:39:639 [31merror[39m: [31mError: Not found - /api/api/demo/jobs[39m
+2025-06-29 21:06:39:639 [31merror[39m: [31mError: Not found - /api/api/demo/professors[39m
+2025-06-29 21:06:39:639 [31merror[39m: [31mError: Not found - /api/api/demo/paths[39m
+2025-06-29 21:06:39:639 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:06:39 +0000] "GET /api/api/demo/courses HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:06:39:639 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:06:39 +0000] "GET /api/api/demo/jobs HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:06:39:639 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:06:39 +0000] "GET /api/api/demo/paths HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:06:39:639 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:06:39 +0000] "GET /api/api/demo/professors HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:06:41:641 [31merror[39m: [31mError: Not found - /api/api/demo/ai/resume-help[39m
+2025-06-29 21:06:41:641 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:06:41 +0000] "POST /api/api/demo/ai/resume-help HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
+2025-06-29 21:06:43:643 [31merror[39m: [31mError: Not found - /api/api/demo/ai/resume-help[39m
+2025-06-29 21:06:43:643 [32minfo[39m: [32m::1 - - [30/Jun/2025:01:06:43 +0000] "POST /api/api/demo/ai/resume-help HTTP/1.1" 500 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"[39m
